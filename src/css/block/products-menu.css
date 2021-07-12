@@ -1,0 +1,19 @@
+.products-menu-section {
+  background: url(../../img/Slider.png) center center/cover no-repeat;
+  position: relative;
+  color: #fff;
+}
+
+.products-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.products-menu__image {
+  background: #999999;
+}

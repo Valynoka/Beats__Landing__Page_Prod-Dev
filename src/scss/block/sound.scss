@@ -1,0 +1,126 @@
+.sound {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: flex-end;
+  width: 9rem;
+
+  @include tablets {
+    width: 8.4rem;
+  }
+
+  @include phones {
+    width: 5.8rem;
+  }
+}
+
+.sound__button {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  margin-right: 10px;
+  cursor: pointer;
+
+  @include phones {
+    margin-right: 3px;
+  }
+
+  &::before {
+    content: "";
+    width: 1.8rem;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    display: block;
+    left: 26%;
+    top: 50%;
+    transform: translateY(-50%) rotate(42deg);
+    z-index: 2;
+    opacity: 0;
+    transform: opacity 0.3s;
+    @include tablets {
+      width: 1.5rem;
+      height: 2px;
+      left: 25%;
+      top: 50%;
+    }
+    @include phones {
+      width: 1.2rem;
+      height: 2px;
+      left: 28%;
+      top: 50%;
+    }
+  }
+
+  &.active {
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+
+
+.sound__mic {
+  cursor: pointer;
+  height: 0.95rem;
+  width: 2.25rem;
+  fill: white;
+
+  @include phones {
+    height: 0.65rem;
+  }
+}
+
+
+.sound__length {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 4px;
+  border-radius: 1px;
+  background: rgba(51, 51, 51, 1);
+  -webkit-appearance: none;
+  appearance: none;
+  outline: 0;
+
+  @include phones {
+    height: 2px;
+  }
+}
+
+.sound__length::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: rgba(224, 31, 61, 1);
+  cursor: pointer;
+  width: 0.74rem;
+  height: 0.74rem;
+  border-radius: 50%;
+
+  @include phones {
+    width: 0.44rem;
+    height: 0.44rem;
+  }
+}
+
+.sound__length::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: rgba(224, 31, 61, 1);
+  cursor: pointer;
+  width: 0.74rem;
+  height: 0.74rem;
+  border-radius: 50%;
+}
+
+.sound__volume {
+  width: 46%;
+
+  @include phones {
+    width: 40%;
+  }
+}
+
+.sound__mark {
+  display: none;
+}

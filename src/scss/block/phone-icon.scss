@@ -1,0 +1,10 @@
+.phone-icon {
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-right: 0.14rem;
+  @include phones {
+    width: 1.05rem;
+    height: 1.05rem;
+    margin-right: 0.34rem;
+  }
+}

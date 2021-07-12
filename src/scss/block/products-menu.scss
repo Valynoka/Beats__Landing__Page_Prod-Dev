@@ -1,0 +1,126 @@
+.products-menu-section {
+  background: url(./img/Slider.png) center center/cover no-repeat;
+  position: relative;
+  color: #fff;
+}
+
+.products-menu__container-title {
+  position: absolute;
+  top: 17.3%;
+  left: 7.6%;
+  font-size: rem(48px);
+  font-weight: 700;
+  text-transform: uppercase;
+  @include tablets {
+    top: 9.8%;
+    left: 4.1%;
+    font-size: 3.15rem;
+  }
+  @include phones {
+    top: 11.8%;
+    left: 2.1%;
+    font-size: 2.35rem;
+  }
+}
+
+.products-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+}
+
+
+.products-menu__item {
+  display: flex;
+
+  &.active {
+    @include phones {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      z-index: 10;
+    }
+  }
+}
+
+.products-menu__title {
+  position: relative;
+  width: rtm(102px);
+  // z-index: 100;// хотел так спрятать "колонки", чтобы поверх расположился текст.
+  @include phones {
+    width: 6.43rem;
+  }
+}
+
+.products-menu__image {
+  width: 100%;
+  height: 100%;
+}
+
+.products-menu__content {
+  width: 0;
+  position: relative;
+  overflow: hidden;
+  transition: width .7s;
+  background: rgba(51, 53, 55, 0.9);
+  opacity: 1;
+  backdrop-filter: blur(3px);
+  z-index: 1;// хотел вывести тест наверх, в первый слой, но почему то не удалось.
+}
+
+.products-menu__text {
+  position: absolute;
+  width: 26.75rem;
+  transform: rotate(-90deg);
+  bottom: 14.38rem;
+  right: -10.1rem;
+  font-family: "Alegreya Sans";
+  font-size: 2.25rem;
+  font-weight: 700;
+  @include tablets {
+    bottom: 14.48rem;
+    right: -10rem;
+    font-size: 2.35rem;
+  }
+  @include phones {
+    right: -10.13rem;
+    width: 26.75rem;
+    bottom: 14.38rem;
+    font-size: 2.55rem;
+  }
+}
+
+.products-menu__content-text {
+  padding: 1.9rem 3.375rem 1rem 2.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: 'Alegreya Sans';
+  @include tablets {
+    padding: 2.6rem 3.2rem 1rem 2.6rem;
+    font-size: 1.06rem;
+    line-height: 1.55;
+  }
+  @include phones {
+    padding: 2.8rem 2.8rem 1rem 2.7rem;
+    font-size: 1.14rem;
+  }
+}
+// .products-menu__close {
+
+// }
+
+// .products-menu__plank {
+//   display: block;
+//   background:black;
+//   height:0.25rem;
+//   border-radius: 1.63rem;
+// }
+
+// .products-menu__image {
+//   // background: #999999;
+//   height: 100%;
+// }

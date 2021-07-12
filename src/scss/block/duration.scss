@@ -1,0 +1,105 @@
+.duration {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.duration__btn-wrap {
+  display: flex;
+  align-items: center;
+  width: 2.39rem;
+  flex-shrink: 0;
+  @include phones {
+    width: 1.59rem;
+  }
+}
+
+.duration__img {
+  height: 0;
+  width: 0;
+  border: 8px solid  transparent;
+  border-left-color: #FFF;
+  border-right-width: 0;
+  background: transparent;
+  outline: 0;
+  transition: 0.3s;
+  cursor: pointer;
+  @include phones {
+    border: 5px solid  transparent;
+    border-left-color: #FFF;
+  }
+  &.active {
+    border: 7px solid #FFF;
+    height: 1rem;
+    border-top: 0;
+    border-bottom: 0;
+    padding:  1px;
+    @include phones {
+      height: 0.6rem;
+      width: 0.2rem;
+    }
+  }
+}
+
+
+// только так отображался значок "пауза"
+// .video__player-img--active
+// .duration__img {
+//   border: 5px solid #FFF;
+//   height: 1rem;
+//   border-top: 0;
+//   border-bottom: 0;
+//   padding:  2px;
+//   @include phones {
+//     height: 0.6rem;
+//     width: 0.2rem;
+//   }
+// }
+
+
+
+.duration__length-wrap {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  border: 0px solid #333333;
+  // border: 4px solid #333333;
+  height: 2px;
+  border-radius: 1px;
+  background: rgba(51, 51, 51, 1);
+  -webkit-appearance: none;
+  appearance: none;
+  outline: 0;
+  cursor: pointer;
+  @include phones {
+    border: 0px solid #333333;
+    // border: 2px solid #333333;
+  }
+}
+
+
+// .duration__length-button {
+//   position: absolute;
+//   -webkit-appearance: none;
+//   appearance: none;
+//   background:rgba(224, 31, 61, 1);
+//   cursor: pointer;
+//   width: 0.74rem;
+//   height: 0.74rem;
+//   border-radius: 50%;
+//   border: none;
+//   padding: 0;
+//   top: 50%;
+//   transform: translate(-50%, -50%);
+//   left: 0;
+//   @include phones {
+//     width: 0.44rem;
+//     height: 0.44rem;
+//   }
+// }
+
+
+

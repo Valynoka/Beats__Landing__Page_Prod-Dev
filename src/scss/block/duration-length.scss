@@ -1,0 +1,41 @@
+.duration-length {
+  width: 100%;
+  height: 4px;
+  border-radius: 1px;
+  background: linear-gradient(90deg, #E01F3D 0%, #E01F3D 0%, #E01F3D 0%, #333333 0%);
+  background: rgba(51, 51, 51, 1);
+  -webkit-appearance: none;
+  appearance: none;
+  outline: 0;
+  @include phones {
+    height: 2px;
+  }
+}
+
+.duration-length::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  appearance: none;
+  background:rgba(224, 31, 61, 1);
+  cursor: pointer;
+  width: 0.74rem;
+  height: 0.74rem;
+  border-radius: 50%;
+  @include phones {
+    width: 0.44rem;
+    height: 0.44rem;
+  }
+}
+
+.duration-length::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background:rgba(224, 31, 61, 1);
+  cursor: pointer;
+  width: 0.74rem;
+  height: 0.74rem;
+  border-radius: 50%;
+  @include phones {
+    width: 0.44rem;
+    height: 0.44rem;
+  }
+}

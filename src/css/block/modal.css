@@ -1,0 +1,9 @@
+.modal {
+  position: relative;
+}
+
+.modal__container {
+  position: absolute;
+  width: rem(309px);
+  height: rem(176px);
+}

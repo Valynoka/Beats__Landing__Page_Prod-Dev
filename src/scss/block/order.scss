@@ -1,0 +1,264 @@
+.order {
+  background: url(../img/orderbackgraund.png) bottom;
+  background-color: #181818;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+}
+
+
+.order__title{
+  font-size: 3rem;
+  line-height: 1.1;
+  margin-bottom: 3.63rem;
+  text-align: center;
+  @include tablets {
+    font-size: 3.2rem;
+    margin-bottom: 2.2rem;
+  }
+  @include phones {
+    font-size: 2.29rem;
+    margin-bottom: 3.1rem;
+  }
+}
+
+.orders__sides {
+  display: flex;
+    @include tablets {
+    padding: 0 18%;
+    flex-direction: column;
+  }
+  @include phones {
+    flex-direction: column;
+    padding: 0 0;
+  }
+}
+
+.order__right{
+  margin-right: 0.81rem;
+}
+
+.order__row {
+  display: flex;
+  margin-bottom: 1rem;
+  &--textarea {
+    margin-bottom: 2.38rem;
+  }
+  @include tablets {
+    margin-bottom: 1.3rem;
+  }
+  @include phones {
+    margin-bottom: 1.45rem;
+  }
+}
+
+.order__col {
+  flex: 1;
+  margin-right: 1.63rem;
+  @include tablets {
+    margin-right: 0;
+  }
+}
+
+.order__col:last-child{
+  margin-right: 0;
+}
+
+.order__title-input {
+  flex: 1;
+  margin-right: 1.81rem;
+}
+
+.order__title-input:last-child {
+  margin-right: 0rem;
+}
+
+.order__form-iput {
+  width: 100%;
+  padding: 1.13rem 0.75rem;
+  border-radius: 0.31rem;
+  cursor: pointer;
+  border: solid 0.19rem transparent;
+
+  &:hover {
+    box-shadow: 0 0 0 0.19rem #E01F3D;
+  }
+
+  &--textarea {
+    resize: none;
+    height: 9.56rem;
+    @include tablets {
+      height: 5.5rem;
+    }
+  }
+  @include tablets {
+    padding: 0.34rem 0.5rem;
+  }
+}
+
+
+// убрал в modal.scss
+// .input-error {
+//   border-color: brown;
+// } 
+
+// .order__form-iput.input-error  {
+//   border-color: brown;
+// }
+
+.oreder__form-title {
+  margin-bottom: 0.31rem;
+  @include phones {
+    font-size: 1.14rem;
+  }
+}
+
+
+
+.order__boxes {
+  display: flex;
+  margin-bottom: 1.31rem;
+  @include tablets {
+    margin-bottom: 2rem;
+  }
+  @include phones {
+    // margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2.41rem;
+  }
+}
+
+.order__boxes-radio {
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  margin-right: 1.19rem;
+  user-select: none;
+  @include tablets {
+    margin-right: 2rem;
+  }
+}
+.order__boxes-radio:last-child {
+  margin-right: 0;
+}
+
+.order__radio {
+  display: none;
+
+  &:checked ~ .order__radio-display {
+    &::before {
+      display: block;
+    }
+  }
+}
+
+.order__radio-display {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: relative;
+  background: white;
+  border-radius: 50%;
+  margin-right: 0.63rem;
+
+
+  &::before{
+    content: "";
+    width: 0.75rem;
+    height: 0.75rem;
+    background: #E01F3D;
+    border-radius: 50%;
+    position: absolute;
+    display: none;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.order__radio-title{
+  @include phones {
+    font-size: 1.14rem;
+  }
+}
+
+.order__boxes-checkbox {
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  margin-right: 1.31rem;
+  user-select: none;
+}
+
+.order__checkbox {
+  display: none;
+
+
+  &:checked ~ .order__checkbox-display {
+    &::before {
+      display: block;
+    }
+  }
+}
+
+.order__checkbox-display {
+  width: 1.38rem;
+  height: 1.38rem;
+  position: relative;
+  background: white;
+  border-radius: 0.31rem;
+  margin-right: 0.63rem;
+
+
+  &::before{
+    content: "";
+    width: 0.75rem;
+    height: 0.75rem;
+    background: url(../img/checkmark.png) center center no-repeat;
+    position: absolute;
+    display: none;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.order__checkbox-title {
+  @include phones {
+    font-size: 1.14rem;
+  }
+}
+
+.order__buttons {
+  position: relative;
+  right: 0.63rem;
+  display: flex;
+  margin-top: 3.06rem;
+  @include tablets {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+  }
+  @include phones {
+    margin-top: 2.9rem;
+    justify-content: center;
+  }
+}
+
+.order__button {
+  @include phones {
+    font-size: 1.2rem;
+  };
+}
+
+.order__button-clear {
+  background: none;
+  padding: 0.75rem 0;
+  margin-left: 1rem;
+  @include tablets {
+    margin-left: 1.5rem;
+  }
+  @include phones {
+    font-size: 1.2rem;
+  };
+}

@@ -1,0 +1,37 @@
+.socials{
+  display: flex;
+}
+
+.socials__link{
+  margin-right: 1.1rem;
+  @include tablets {
+    margin-right: 0.7rem;
+  }
+  @include phones {
+    margin-right: 1rem;
+  }
+}
+
+.socials__site {
+  fill:#B3B3B3;
+  width: 1.88rem;
+  height: 1.88rem;
+
+  :hover{
+    fill: black;
+  }
+  @include tablets {
+    width: 2.1rem;
+    height: 2.1em;
+  }
+  @include phones {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+}
+.socials {
+  @include phones {
+    max-width: 9.95rem;
+  }
+  
+}

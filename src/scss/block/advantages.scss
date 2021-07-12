@@ -1,0 +1,126 @@
+.advantages__toppage {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3.88rem;
+  @include phones {
+    align-items: center;
+  }
+}
+
+.advantages__title {
+  font-size: 3rem;
+  line-height: 1.1;
+  margin-bottom: 1.13rem;
+  padding: 0 4%;
+  text-align: center;
+  @include tablets {
+    font-size: 3.2rem;
+    margin-bottom: 0.8rem;
+  }
+  @include phones {
+    font-size: 2.28rem;
+    padding: 0;
+    max-width: 32.64rem;
+  }
+}
+
+.advantages__subtitle {
+  text-align: center;
+  font-size: 1rem;
+  padding: 0 18%;
+  @include tablets {
+    font-size: 1.07rem;
+    padding: 0 15%;
+  }
+  @include phones {
+    padding: 0 9%;
+    font-size: 1.15rem;;
+    padding: 0;
+    max-width: 31.14rem;
+  }
+}
+
+
+.advantages__list {
+  display: flex;
+  justify-content: space-between;
+  @include phones {
+    flex-direction: column;
+  }
+}
+
+.advantages__aspects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 26.6%;
+  @include tablets {
+    width: 100%;
+  }
+  @include phones {
+    flex-direction: row;
+    margin-bottom: 2.7rem;
+  }
+}
+
+.advantages__info {
+  text-align: center;
+  @include phones {
+    width: 62%;
+  }
+}
+
+.advantages__picture-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8rem;
+  height: 8rem;
+  background: #F2F5F4;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  @include tablets {
+    margin-bottom: 1.8rem;
+  }
+  @include phones {
+    margin-right: 0.7rem;
+    align-items: center;
+    margin-bottom: 0;
+    width: 9.14rem;
+    height: 9.14rem;
+  }
+}
+
+.advantages__picture {
+  width: 50%;
+  height: auto;
+  display: block;
+}
+
+.advantages__information-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 0.44rem;
+  @include tablets {
+    font-size: 1.57rem;
+    margin-bottom: 1.5rem;
+  }
+  @include phones {
+    margin-bottom: 0.5rem;
+    text-align: left;
+    font-size: 1.7rem;
+  }
+}
+
+.advantages__information-text {
+  text-align: center;
+  font-size: 1rem;
+  @include tablets {
+    font-size: 1.05rem;
+  }
+  @include phones {
+    margin-bottom: 0;
+    text-align: left;
+    font-size: 1.14rem;
+  }
+}

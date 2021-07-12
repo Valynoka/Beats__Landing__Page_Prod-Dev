@@ -1,0 +1,59 @@
+.assortment-composition {
+  position: relative;
+  display: inline-flex;
+  &:hover {.assortment-composition__list {
+    left: 100%;
+    opacity: 1;
+  }}
+  @include tablets {
+    display: none;
+  }
+}
+
+.assortment-composition__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: rem(20px);
+}
+
+.assortment-composition__list {
+  position: absolute;
+  top: 0;
+  left: -99999px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  background: rgba(213, 213, 213, 1);
+  border-radius: rem(4px);
+  padding: 1.425rem 1.6125rem 0.5rem 1.675rem;
+  min-width: rem(273px);
+}
+
+.assortment-composition__parametr-icon {
+  width: rem(32px);
+  height: rem(32px);
+  flex-shrink: 0;
+  margin-right: rem(12px);
+}
+
+// .assortment-composition__desc {
+  
+// }
+
+.assortment-composition__value {
+  // flex-shrink: 0;
+  margin-left: auto;
+}
+
+.assortment__composition__button {
+  background:  rgba(154, 154, 154, 1);
+  display: inline-flex;
+  border-radius: 0.25rem;
+  margin-bottom: rem(25px);
+
+}
+
+.assortment__composition-icon {
+  fill: white;
+  width: 5.6875rem;
+  height: 5.6875rem;
+}

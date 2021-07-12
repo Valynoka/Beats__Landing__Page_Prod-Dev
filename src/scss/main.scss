@@ -1,0 +1,32 @@
+$baseFontSize: 16px;
+$tablets: 768px;
+$phones: 480px;
+@import "layout/media.scss";
+@import "layout/normalize.scss";
+@import "layout/font.scss";
+@import "layout/base.scss";
+@import "block/header.scss";
+@import "block/hamburger.scss";
+@import "block/greeting-content.scss";
+@import "block/button.scss";
+@import "block/advantages.scss";
+@import "block/assortment.scss";
+@import "block/assortment-composition.scss";
+@import "block/team.scss";
+@import "block/products-menu.scss";
+@import "block/reviews.scss";
+@import "block/video.scss";
+@import "block/order.scss";
+@import "block/fixed__navigation.scss";
+@import "block/contacts.scss";
+@import "block/map-section.scss";
+@import "block/phone-icon.scss";
+@import "block/socials.scss";
+@import "block/burger.scss";
+@import "block/modal.scss";
+@import "block/duration.scss";
+@import "block/duration-length.scss";
+@import "block/sound.scss";
+
+
+

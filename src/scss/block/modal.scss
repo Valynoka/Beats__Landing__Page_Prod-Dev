@@ -1,0 +1,67 @@
+// html {
+//   margin-left: calc(100vw - 100%);
+//   margin-right: 0;
+// }
+
+
+// .fancybox-active.compensate-for-scrollbar {
+//   margin-right: 0;
+// }
+
+.modal {
+  // position: relative;
+  display: none;
+}
+
+.fancybox-content {
+  padding: 87px 155px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__container {
+  position: absolute;
+  width: rem(308px);
+  height: rem(172px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+.error-modal {
+  position: absolute;
+  width: rem(308px);
+  height: rem(172px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: red;
+}
+
+
+.input-error {
+  border-color: brown;
+}
+
+.modal__content {
+  margin-bottom: rem(22px);
+  font-size: rem(18px);
+}
+
+.app-btn-notification {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+
+
